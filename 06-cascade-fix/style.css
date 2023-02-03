@@ -1,0 +1,48 @@
+body{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+/*Moved the class selector "para" before the class selector "small-para" to make the font-size take precendence using the order*/
+/*approach confired by official TOP solution*/
+.para {
+  font-size: 22px;
+}
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/*Moved the class selector "button" before the class selector "confirm to make the background-color take precedence using the order rule*/
+/*approach confired by official TOP solution*/
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+/*Added .text chained selector to target the element that has both "text" and "child" classes*/
+/*approach NOT confirmed by official TOP solution, but it still works :) */
+.text.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
