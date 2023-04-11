@@ -58,8 +58,5 @@ body, html {
 
 .footer {
   background-color: #393f4d;
-  grid-row-start: 4;
-  grid-column-start: 1;
-  grid-row-end: 5;
-  grid-column-end: 3;
+  grid-area: 4/1/5/3;
 }
